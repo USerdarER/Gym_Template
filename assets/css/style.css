@@ -1,0 +1,234 @@
+/* div#template-img {
+  min-height: 8000px;
+  background: url(../img/2449739.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+} */
+
+:root {
+  --sports-blue: #03bbef;
+  --sports-gray: #141414;
+  --sports-black: #101010;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  color: #fefefe;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Utility Classes */
+.sports-blue {
+  color: var(--sports-blue);
+}
+.sports-gray {
+  color: var(--sports-gray);
+}
+.bg-sports-blue {
+  background: var(--sports-blue) !important;
+}
+.bg-sports-gray {
+  background: var(--sports-gray) !important;
+}
+.bg-sports-black {
+  background: var(--sports-black) !important;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}
+
+/* Navbar */
+
+nav.navbar {
+  padding: 0 16px;
+}
+nav.navbar {
+  background: rgba(0, 0, 0, 0.9);
+  top: 30px;
+}
+
+nav.navbar div.container a.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 550;
+}
+nav.navbar div.container div.navbar-collapse {
+  flex-grow: unset;
+}
+nav.navbar div.container a.navbar-brand span,
+nav.navbar div.container div.navbar-collapse ul.navbar-nav li.nav-item a {
+  color: var(--sports-blue);
+}
+nav.navbar
+  div.container
+  div.navbar-collapse
+  ul.navbar-nav
+  li.nav-item
+  a.nav-link {
+  font-size: 1.4rem;
+  padding: 0.6rem 1.4rem;
+}
+nav.navbar
+  div.container
+  div.navbar-collapse
+  ul.navbar-nav
+  li.nav-item
+  a.nav-link:hover {
+  background: #333232;
+  color: #03bcefde;
+}
+
+/* Section: Display */
+
+section#display {
+  background: url(../img/Image1.png) no-repeat center top/cover;
+  /* background-attachment: fixed; */
+  width: 100%;
+  min-height: 110vh;
+}
+
+section#display div.overlay div.container {
+  min-height: 110vh;
+  padding-top: auto;
+  padding-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section#display div.overlay div.container h2.display-1 {
+  font-size: 12rem;
+}
+
+section#display div.overlay div.container a.btn {
+  font-size: 1.5rem;
+  border-radius: 25px;
+  color: var(--sports-blue);
+  font-weight: 700;
+  background: #fefefee1;
+  padding: 0.7rem 2.5rem;
+}
+
+/* Section: Who */
+section#who {
+  background: #000000;
+}
+
+/* Section: We */
+section#we {
+  background: #141414;
+}
+
+/* Section: Priorities */
+section#priorities {
+  background: url(../img/Image2.png) no-repeat center center/cover;
+  width: 100%;
+  /* background-attachment: fixed; */
+}
+
+section#priorities div.overlay div.container div.row div div.card {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Section: What */
+section#what {
+  background: #000000;
+}
+section#what div.container,
+section#what div.container div.d-flex {
+  min-height: 100vh;
+}
+section#what div.container div.row div div.card {
+  background: rgb(0, 0, 0);
+}
+
+/* Section: Quote */
+section#quote,
+section#quote div.container,
+section#quote div.container div.d-flex {
+  background: #141414;
+  min-height: 30vh;
+}
+
+/* Section: Double Panel */
+section#double-panel {
+  background: #000000;
+}
+
+section#double-panel div.container div.row div#double-panel-img {
+  background: url(../img/Image3.png) no-repeat center center/cover;
+  min-height: 50vh;
+}
+
+/* Header: Explore-Head*/
+header#explore-head {
+  background: url(../img/Image4.png) no-repeat center center/cover;
+  min-height: 110vh;
+}
+header#explore-head div.overlay div.container div.d-flex {
+  min-height: 110vh;
+}
+
+/* Section: Blog */
+#blog-top {
+  background: #141414;
+  min-height: 100vh;
+}
+section#blog div.container a{
+  color: white;
+}
+
+.entry {
+  background: #101010 !important;
+  padding: 0.5rem;
+}
+
+
+
+/* Section: Contact */
+body#contact {
+  background: var(--sports-gray);
+}
+header#contact-header div.container div#contact-background {
+  background: url(../img/blog_2.jpg) no-repeat center center/cover;
+  /* background-attachment: fixed; */
+  height: 50vh;
+  width: 100%;
+  border-radius:5px;
+}
+header#contact-header div.container div#contact-background div.overlay{
+  border-radius: 5px;
+}
+
+/* @Media */
+
+@media (max-width: 991.9px) {
+  section#display div.overlay div.container h2.display-1,
+  header#explore-head div.overlay div.container div.d-flex h2.display-2 {
+    font-size: 5rem;
+  }
+  nav.navbar {
+    top: 0;
+  }
+}
+@media (max-width: 450px) {
+  section#display div.container h2.display-1 {
+    font-size: 4rem;
+  }
+  section#display {
+    min-height: 100vh;
+  }
+  section#display div.container {
+    min-height: 100vh;
+  }
+}
